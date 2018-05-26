@@ -39,7 +39,7 @@ public class SimpleAudioView extends FrameLayout {
     private void init() {
         View.inflate(getContext(), R.layout.lch_audioplayer_simple_player_view, this);
 
-        ivPlayPause = findViewById(R.id.ivPlayPause);
-        seekBar = findViewById(R.id.seekBar);
+        ivPlayPause = (ImageView)findViewById(R.id.ivPlayPause);
+        seekBar = (SeekBar)findViewById(R.id.seekBar);
     }
 }

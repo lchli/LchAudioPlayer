@@ -4,8 +4,10 @@ buildscript {
     rootProject.ext {
         minSdkVersion = 15
         compileSdkVersion = 25
-        buildToolsVersion = "25.0.0"
+        buildToolsVersion = "27.0.3"
         targetSdkVersion = 25
+
+        android_support_version="25.1.1"
 
     }
 
