@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.lch.audio_player.R;
 
@@ -19,7 +20,11 @@ public class SimpleAudioView extends FrameLayout {
 
 
     public ImageView ivPlayPause;
+    public ImageView next;
+    public ImageView prev;
     public SeekBar seekBar;
+    public TextView startText;
+    public TextView endText;
 
     public SimpleAudioView(@NonNull Context context) {
         super(context);
@@ -39,7 +44,11 @@ public class SimpleAudioView extends FrameLayout {
     private void init() {
         View.inflate(getContext(), R.layout.lch_audioplayer_simple_player_view, this);
 
-        ivPlayPause = (ImageView)findViewById(R.id.ivPlayPause);
-        seekBar = (SeekBar)findViewById(R.id.seekBar);
+        ivPlayPause = (ImageView) findViewById(R.id.play_pause);
+        prev = (ImageView) findViewById(R.id.prev);
+        next = (ImageView) findViewById(R.id.next);
+        seekBar = (SeekBar) findViewById(R.id.seekBar1);
+        startText = (TextView) findViewById(R.id.startText);
+        endText = (TextView) findViewById(R.id.endText);
     }
 }
