@@ -36,6 +36,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                style="@android:style/Widget.Holo.SeekBar"
                 android:layout_toLeftOf="@+id/endText"
                 android:layout_toRightOf="@+id/startText" />
 
